@@ -1,0 +1,13 @@
+#!/bin/bash
+source leaprc.protein.ff19SB
+source leaprc.DNA.bsc1
+histone = loadpdb histone_octamer.pdb
+dna = loadpdb widom_601.pdb 
+com = combine {histone, dna}
+source leaprc.water.opc
+solvatebox com OPCBOX 12
+addIons com K+ 447
+addIons com Cl- 447
+saveamberparm com canonical_explicit1.prmtop canonical_explicit1.rst7
+quit
+

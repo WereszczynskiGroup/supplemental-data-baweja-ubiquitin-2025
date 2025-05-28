@@ -1,0 +1,158 @@
+**************************************************************
+**                                                          **
+**                 Input file of CafeMol                    **
+**                                                          **
+**        This file is for folding simulation by MD         **
+**                                                          **
+**************************************************************
+
+<<<< filenames
+path = .
+filename = 1kx5_147bp_goocc
+**OUTPUT pdb crd velo dcd vdcd movie psf rst
+OUTPUT pdb crd dcd psf
+path_para = /home/username/cafemol/trunk/para3
+path_pdb = .
+path_ini = .
+path_aicg = .
+**path_natinfo = .
+>>>> 
+
+<<<< job_cntl
+** constant temperature
+i_run_mode = 2
+** langevin dynamics
+i_simulate_type = 1
+** native configuration given in unit_and_state
+i_initial_state = 2
+>>>>
+
+<<<< unit_and_state
+** read from pdb files given below
+i_seq_read_style = 1
+** read native info from pdb files given below
+i_go_native_read_style = 1
+** native state
+1-2  dna2    1kx5_dna_147bp.pdb
+3-10 protein 1kx5_octamer_model.pdb
+>>>> 
+
+**<<<< initial_struct
+**1-8 ??.pdb
+**9-10 ??.pdb
+**>>>>
+
+<<<< energy_function
+LOCAL(1-2)  L_DNA2
+LOCAL(3-10) L_AICG2_PLUS
+NLOCAL(1-2/1-2)   DNA2  ELE
+NLOCAL(1-2/3-10)  ELE   EXV
+NLOCAL(3-10/3-10) AICG2 EXV
+** CA model
+i_use_atom_protein = 0
+** default dna coarse-graining
+i_use_atom_dna = 0
+** dafault prot-dna go interactions centered at sugar+base
+i_go_atom_dna = 1
+**i_coef_from_ninfo = 1
+i_output_energy_style = 1
+** residue-dependent radii
+i_residue_exv_radii = 1
+>>>> 
+
+<<<< aicg
+i_aicg = 1
+>>>> 
+
+<<<< md_information
+** number of simulations
+n_step_sim = 1
+n_tstep(1) = 1
+tstep_size = 0.3
+n_step_save = 100
+n_step_neighbor = 100
+** move com to the origin?
+i_com_zeroing = 0
+** remove translations and rotations?
+i_no_trans_rot = 0
+tempk = 300.0
+n_seed = 1000
+** remove some of Go interactions?
+** described in <<<< del_interaction
+i_del_int = 1
+** redefine some default parameters?
+** described in <<<< redefine_para
+i_redef_para = 0
+** is the system in a box?
+** described in <<<< in_box
+i_in_box = 0
+** put the whole system in a spherical cap
+** described in <<<< in_cap
+i_in_cap = 1
+** restrain the center of mass of one group?
+i_anchor = 0
+** restrain the distance between two groups?
+i_bridge = 0
+>>>> 
+
+<<<< in_cap
+rcap = 500.0
+kcap = 500.0
+CENTER 0.0 0.0 0.0
+>>>>
+
+<<<< electrostatic
+dna2_phos_pro_charge = -1.0
+cutoff_ele = 5.0
+ionic_strength = 0.10
+diele_water = 78.0
+i_diele = 1
+>>>>
+
+<<<< del_interaction
+** H3 Ntail chain 1
+DEL_GO(881-912/881-1860)
+** H4 Ntail chain 2
+DEL_GO(1016-1038/881-1860)
+** H2A Ntail chain 3
+DEL_GO(1118-1131/881-1860)
+** H2A Ctail chain 3
+DEL_GO(1238-1245/881-1860)
+** H2B Ntail chain 4
+DEL_GO(1246-1271/881-1860)
+** H3 Ntail chain 5
+DEL_GO(1371-1402/881-1860)
+** H4 Ntail chain 6
+DEL_GO(1506-1528/881-1860)
+** H2A Ntail chain 7
+DEL_GO(1608-1621/881-1860)
+** H2A Ctail chain 7
+DEL_GO(1728-1735/881-1860)
+** H2B Ntail chain 8
+DEL_GO(1736-1761/881-1860)
+>>>>
+
+<<<< flexible_local
+k_dih = 1.00000
+k_ang = 1.00000
+** H3 Ntail chain 1
+DEL_LGO_ADD_FLP(881-912)
+** H4 Ntail chain 2
+DEL_LGO_ADD_FLP(1016-1038)
+** H2A Ntail chain 3
+DEL_LGO_ADD_FLP(1118-1131)
+** H2A Ctail chain 3
+DEL_LGO_ADD_FLP(1238-1245)
+** H2B Ntail chain 4
+DEL_LGO_ADD_FLP(1246-1271)
+** H3 Ntail chain 5
+DEL_LGO_ADD_FLP(1371-1402)
+** H4 Ntail chain 6
+DEL_LGO_ADD_FLP(1506-1528)
+** H2A Ntail chain 7
+DEL_LGO_ADD_FLP(1608-1621)
+** H2A Ctail chain 7
+DEL_LGO_ADD_FLP(1728-1735)
+** H2B Ntail chain 8
+DEL_LGO_ADD_FLP(1736-1761)
+>>>>

@@ -1,0 +1,20 @@
+#!/bin/sh
+python append_files.py unit3-5.ninfo 1kx5_147bp_symmdimgo0.30_unit3-5.ninfo unit3_5.ninfo
+python append_files.py unit3-7.ninfo 1kx5_147bp_symmdimgo0.30_unit3-7.ninfo unit3_7.ninfo
+python append_files.py unit3-9.ninfo 1kx5_147bp_symmdimgo0.30_unit3-9.ninfo unit3_9.ninfo
+python append_files.py unit4-5.ninfo 1kx5_147bp_symmdimgo0.30_unit4-5.ninfo unit4_5.ninfo
+python append_files.py unit4-6.ninfo 1kx5_147bp_symmdimgo0.30_unit4-6.ninfo unit4_6.ninfo
+python append_files.py unit4-9.ninfo 1kx5_147bp_symmdimgo0.30_unit4-9.ninfo unit4_9.ninfo
+python append_files.py unit4-10.ninfo 1kx5_147bp_symmdimgo0.30_unit4-10.ninfo unit4_10.ninfo
+python append_files.py unit5-6.ninfo 1kx5_147bp_symmdimgo0.30_unit5-6.ninfo unit5_6.ninfo
+python append_files.py unit5-7.ninfo 1kx5_147bp_symmdimgo0.30_unit5-7.ninfo unit5_7.ninfo
+python append_files.py unit5-8.ninfo 1kx5_147bp_symmdimgo0.30_unit5-8.ninfo unit5_8.ninfo
+python append_files.py unit5-9.ninfo 1kx5_147bp_symmdimgo0.30_unit5-9.ninfo unit5_9.ninfo
+python append_files.py unit6-8.ninfo 1kx5_147bp_symmdimgo0.30_unit6-8.ninfo unit6_8.ninfo
+python append_files.py unit6-9.ninfo 1kx5_147bp_symmdimgo0.30_unit6-9.ninfo unit6_9.ninfo
+python append_files.py unit6-10.ninfo 1kx5_147bp_symmdimgo0.30_unit6-10.ninfo unit6_10.ninfo
+python append_files.py unit7-8.ninfo 1kx5_147bp_symmdimgo0.30_unit7-8.ninfo unit7_8.ninfo
+python append_files.py unit7-9.ninfo 1kx5_147bp_symmdimgo0.30_unit7-9.ninfo unit7_9.ninfo
+python append_files.py unit8-9.ninfo 1kx5_147bp_symmdimgo0.30_unit8-9.ninfo unit8_9.ninfo
+python append_files.py unit8-10.ninfo 1kx5_147bp_symmdimgo0.30_unit8-10.ninfo unit8_10.ninfo
+python append_files.py unit9-10.ninfo 1kx5_147bp_symmdimgo0.30_unit9-10.ninfo unit9_10.ninfo

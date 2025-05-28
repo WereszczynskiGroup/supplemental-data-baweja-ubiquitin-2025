@@ -1,0 +1,10 @@
+0,#8dd3c7
+2,#80b1d3
+3,#fb8072
+4,#ffffb3
+5,#ffffb3
+6,#ffffb3
+7,#ffffb3
+8,#ffffb3
+9,#ffffb3
+10,#ffffb3

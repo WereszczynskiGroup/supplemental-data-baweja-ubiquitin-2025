@@ -1,0 +1,23 @@
+#!/bin/bash
+#source leaprc.ff14SB
+source leaprc.protein.ff19SB
+source leaprc.DNA.bsc1
+loadamberparams  frcmod.gli
+loadamberparams  frcmod1.lyi
+loadamberprep gli.prepin
+loadamberprep lyi1.prepin
+histone = loadpdb chain_full1.pdb
+bond histone.356.N1 histone.441.C
+bond histone.922.N1 histone.1007.C
+dna = loadpdb 1kx5_like.pdb 
+
+com = combine {histone, dna}
+
+
+source leaprc.water.opc
+solvatebox com OPCBOX 14
+addIons com K+ 309
+addIons com Cl- 309
+saveamberparm com h2ak119ub_explicit1.prmtop h2aK119ub_explicit1.rst7
+quit
+
