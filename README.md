@@ -1,8 +1,9 @@
 # Project Title
 
-This repository contains supplementary code and data for:
+This repository contains simulation input files, analysis scripts, and processed data for:
 
-**[Paper Title]**, [Authors], [Journal], [Year]
+**Mechanistic basis for the opposing effects of H2A and H2B ubiquitination on nucleosome stability and dynamics**, L. Baweja and J. Wereszczynski, *bioRxiv*, 2025
+<!--(Insert paper DOI when available) -->
 
 ## Directory Structure
 - `input_files/`: Simulation setup files (PSF, PDB, config)
@@ -15,4 +16,12 @@ This repository contains supplementary code and data for:
 - Data: CC BY 4.0 (see LICENSE-data.txt)
 
 ## Citation
-Include the paper citation or DOI here when published.
+If you use materials from this repository, please cite the following:
+
+L. Baweja and J. Wereszczynski, *Mechanistic basis for the opposing effects of H2A and H2B ubiquitination on nucleosome stability and dynamics*, *bioRxiv*, 2025
+<!--DOI: [Insert paper DOI when available] -->
+
+Data archive on Zenodo:  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14866730.svg)](https://doi.org/10.5281/zenodo.14866730)
+
+Trajectory files have been deposited on Zenodo. These files are water-stripped and strided for size reduction, but cover the full simulation time and support full reproduction of results.
