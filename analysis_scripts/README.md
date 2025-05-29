@@ -1,16 +1,12 @@
 # Analysis Scripts
 
-Contains all post-simulation analysis scripts.
+Contains python program files to analyze trajectories generated from all-atom and cg-simulation.
 
-Common tools:
-- cpptraj / pytraj
-- Python (MDAnalysis, MDTraj, NumPy, Pandas)
-- R (for stats or plotting)
-- GROMACS tools (e.g., `gmx rms`, `gmx hbond`)
+Software and libaries required:
+- cpptraj 
+- Python packages and libaries required (MDAnalysis, NumPy, Pandas, pyemma )
+- Correlationplus
+- Ambertools
 
-Include:
-- Scripts to extract observables (e.g., RMSD, contacts, hydrogen bonds)
-- Automation or plotting scripts for generating figures
-- Documentation of required input arguments and software dependencies
 
-If analysis is tightly coupled to simulation format, include clear instructions for conversion (e.g., from AMBER `nc` to MDTraj-readable format).
+
