@@ -3,7 +3,7 @@
 This repository contains simulation input files, analysis scripts, and processed data for:
 
 **Mechanistic basis for the opposing effects of H2A and H2B ubiquitination on nucleosome stability and dynamics**, L. Baweja and J. Wereszczynski, *bioRxiv*, 2025
-<!--(Insert paper DOI when available) -->
+DOI: [10.1101/2025.02.13.638112](https://doi.org/10.1101/2025.02.13.638112)
 
 ## Directory Structure
 - `input_files/`: Simulation setup files (PSF, PDB, config)
@@ -19,7 +19,7 @@ This repository contains simulation input files, analysis scripts, and processed
 If you use materials from this repository, please cite the following:
 
 L. Baweja and J. Wereszczynski, *Mechanistic basis for the opposing effects of H2A and H2B ubiquitination on nucleosome stability and dynamics*, *bioRxiv*, 2025
-<!--DOI: [Insert paper DOI when available] -->
+DOI: [10.1101/2025.02.13.638112](https://doi.org/10.1101/2025.02.13.638112)
 
 Data archive on Zenodo:  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14866730.svg)](https://doi.org/10.5281/zenodo.14866730)
