@@ -1,4 +1,4 @@
-# Project Title
+# Supporting Information for Mechanistic basis for the opposing effects of H2A and H2B ubiquitination on nucleosome stability and dynamics
 
 This repository contains simulation input files, analysis scripts, and processed data for:
 
