@@ -16,6 +16,7 @@ com = combine {histone, dna}
 
 source leaprc.water.opc
 solvatebox com OPCBOX 14
+addIons com K+ 0
 addIons com K+ 309
 addIons com Cl- 309
 saveamberparm com h2ak119ub_explicit1.prmtop h2aK119ub_explicit1.rst7

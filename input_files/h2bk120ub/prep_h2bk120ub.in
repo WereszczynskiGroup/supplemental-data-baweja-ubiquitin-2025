@@ -20,6 +20,7 @@ com = combine {histone, dna}
 source leaprc.water.opc
 solvatebox com OPCBOX 12
 #solvateBox model TIP3PBOX {23 10 41}
+addIons com K+ 0
 addIons com K+ 433
 addIons com Cl- 433
 
